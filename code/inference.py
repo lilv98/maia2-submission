@@ -136,21 +136,6 @@ def show_cfg(cfg):
 
 if __name__ == '__main__':
     
-    # data = [
-    #     {"board": "r1bqkb1r/2pp1ppp/p1n2n2/1p2p3/4P3/1B1P1N2/PPP2PPP/RNBQK2R b KQkq - 1 6", "move": "a6a5", "active_elo": 1081, "opponent_elo": 1095},
-    #     {"board": "r1bqkb1r/2pp1ppp/2n2n2/pp2p3/4P3/1B1P1N2/PPP2PPP/RNBQK2R w KQkq - 0 7", "move": "a2a4", "active_elo": 1095, "opponent_elo": 1081},
-    #     {"board": "r1bqkb1r/2pp1ppp/2n2n2/pp2p3/P3P3/1B1P1N2/1PP2PPP/RNBQK2R b KQkq - 0 7", "move": "b5b4", "active_elo": 1081, "opponent_elo": 1095},
-    #     {"board": "r1bqkb1r/2pp1ppp/2n2n2/p3p3/Pp2P3/1B1P1N2/1PP2PPP/RNBQK2R w KQkq - 0 8", "move": "e1g1", "active_elo": 1095, "opponent_elo": 1081},
-    #     {"board": "r1bqkb1r/2pp1ppp/2n2n2/p3p3/Pp2P3/1B1P1N2/1PP2PPP/RNBQ1RK1 b kq - 1 8", "move": "f6h5", "active_elo": 1081, "opponent_elo": 1095},
-    #     {"board": "r1bqkb1r/2pp1ppp/2n5/p3p2n/Pp2P3/1B1P1N2/1PP2PPP/RNBQ1RK1 w kq - 2 9", "move": "c2c3", "active_elo": 1095, "opponent_elo": 1081},
-    #     {"board": "r1bqkb1r/2pp1ppp/2n5/p3p2n/Pp2P3/1BPP1N2/1P3PPP/RNBQ1RK1 b kq - 0 9", "move": "g7g5", "active_elo": 1081, "opponent_elo": 1095},
-    #     {"board": "r1bqkb1r/2pp1p1p/2n5/p3p1pn/Pp2P3/1BPP1N2/1P3PPP/RNBQ1RK1 w kq - 0 10", "move": "c1g5", "active_elo": 1095, "opponent_elo": 1081},
-    #     {"board": "r1bqkb1r/2pp1p1p/2n5/p3p1Bn/Pp2P3/1BPP1N2/1P3PPP/RN1Q1RK1 b kq - 0 10", "move": "f7f6", "active_elo": 1081, "opponent_elo": 1095},
-    #     {"board": "r1bqkb1r/2pp3p/2n2p2/p3p1Bn/Pp2P3/1BPP1N2/1P3PPP/RN1Q1RK1 w kq - 0 11", "move": "g5e3", "active_elo": 1095, "opponent_elo": 1081}
-    # ]
-    # data = pd.DataFrame(data)
-    # inference_batch(data)
-    
     data = pd.read_csv('../data/all_reduced_rapid.csv')
     data = data[data.move_ply > 10]
     
